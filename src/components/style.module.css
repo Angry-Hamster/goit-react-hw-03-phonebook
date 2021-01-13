@@ -1,0 +1,55 @@
+/* ToDo Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 120px;
+  height: 140px;
+  margin: 0 20px;
+
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button{
+  margin-top: auto;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* ToDo Filter */
+.filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: auto;
+  margin: 0 20px;
+}
+
+.filter input{
+  width: 140px;
+  outline: none;
+}
+
+/* ToDo Contacts */
+.contactList{
+  margin-left: 20px;
+  padding: 0;
+}
+
+.contactList li{
+  list-style: decimal;
+  margin-left: 15px;
+}
+
+.contactList button{
+  border-radius: 10px;
+  margin-left: 5px;
+  outline: none;
+}
