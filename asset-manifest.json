@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Angry-Hamster/goit-react-hw-03-phonebook/static/css/main.b24e9e1a.chunk.css",
+    "main.js": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/main.e9d87b49.chunk.js",
+    "main.js.map": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/main.e9d87b49.chunk.js.map",
+    "runtime-main.js": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/runtime-main.8e9c4d40.js",
+    "runtime-main.js.map": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/runtime-main.8e9c4d40.js.map",
+    "static/js/2.24321ad0.chunk.js": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/2.24321ad0.chunk.js",
+    "static/js/2.24321ad0.chunk.js.map": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/2.24321ad0.chunk.js.map",
+    "index.html": "/Angry-Hamster/goit-react-hw-03-phonebook/index.html",
+    "static/css/main.b24e9e1a.chunk.css.map": "/Angry-Hamster/goit-react-hw-03-phonebook/static/css/main.b24e9e1a.chunk.css.map",
+    "static/js/2.24321ad0.chunk.js.LICENSE.txt": "/Angry-Hamster/goit-react-hw-03-phonebook/static/js/2.24321ad0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e9c4d40.js",
+    "static/js/2.24321ad0.chunk.js",
+    "static/css/main.b24e9e1a.chunk.css",
+    "static/js/main.e9d87b49.chunk.js"
+  ]
+}
