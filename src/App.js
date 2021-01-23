@@ -9,14 +9,14 @@ class App extends Component {
   // ToDo contacts
   state = {
     contacts: [
-      // ! Contacts 
+      // ! Contacts
     ],
     filter: "",
   };
 
   // ToDo methods
   addNewContact = (user) => {
-    this.setState((prev) => ({ contacts: [...prev.contacts, user]}));
+    this.setState((prev) => ({ contacts: [...prev.contacts, user] }));
   };
 
   getFilter = (filter) => {
@@ -25,20 +25,34 @@ class App extends Component {
 
   deleteContact = (id) => {
     const { contacts } = this.state;
-    this.setState({ contacts: contacts.filter(w => w.id != id) });
+    this.setState({ contacts: contacts.filter((w) => w.id != id) });
   };
 
   // ToDo livecicle
 
-  componentDidMount(){
+  componentDidMount() {
     // ? load JSON to localStorege
     window.addEventListener("beforeunload", () => {
-      localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
+      localStorage.clear();
+      this.state.contacts.length && localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     });
 
     // ? unload JSON of localStorege
     window.addEventListener("load", () => {
-      this.setState({contacts: JSON.parse(localStorage.getItem('contacts'))})
+      if (localStorage.getItem("contacts") != null) {
+        this.setState({ contacts: JSON.parse(localStorage.getItem("contacts")) });
+        console.log(
+          "%c[Sistem call]%c[LocalStorage get key is successful]",
+          "color: purple; font-size: 15px;",
+          "color: green; font-size: 15px;"
+        );
+      } else {
+        console.log(
+          "%c[Sistem call]%c[LocalStorage is null]",
+          "color: purple; font-size: 15px;",
+          "color: red; font-size: 15px;"
+        );
+      }
     });
   }
 
